@@ -30,12 +30,13 @@
         <div class="introduce-box js-introduce">
 
           <div class="tab-wrap js-tab-wrap">
-            <div tab-class="tab-menu js-tab-menu">
-              <button type="button" data-tab="intro" class="btn-tab">소개</button>
-              <button type="button" data-tab="graphy" class="btn-tab">경력</button>
+            <div class="tab-menu js-tab-menu">
+              <button type="button" data-tab="intro" class="btn-tab"><span>소개</span></button>
+              <button type="button" data-tab="graphy" class="btn-tab"><span>경력</span></button>
             </div>
 
-            <div id="intro" class="tab-contents js-tab-contents showing">
+            <!-- 소개 -->
+            <div id="intro" class="tab-contents js-tab-contents">
               <div class="section intro">
                 <p>소개</p>
                 <div class="pic-desc-wrap">
@@ -50,8 +51,9 @@
                 </div>
               </div>
             </div>
+            <!-- //소개 -->
 
-            <div id="graphy" class="tab-contents js-tab-contents">
+            <div id="graphy" class="tab-contents js-tab-contents" style="display: none;">
               <div class="section graphy">
                 <p>경력사항</p>
                 <dl>

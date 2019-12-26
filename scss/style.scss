@@ -2,16 +2,51 @@
 @import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap");
 @import "_reset";
 
-.introduce-box {
-  display: none;
+/* [common] form element components */
+.inp-wrap {
+  border-bottom: 2px solid #222;
+  height: $inp_text_height;
+
+  .inp {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-size: $font_size;
+  }
 }
 
-.showing {
-  display: block;
+.inp-name {
+  display: inline-block;
+  width: 120px;
 }
 
-.hide {
-  display: none !important;
+/* [common] button components */
+[class^="btn-"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 15px;
+  outline: 0;
+  border: 3px solid #222;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* [common] tab components */
+.tab-wrap {
+  .tab-menu {
+    .btn-tab {
+      height: 42px;
+
+      &.showing {
+        &:before {
+          content: "🔎";
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
 
 .common-enter-box {
@@ -47,59 +82,30 @@
 }
 
 .introduce-box {
-  text-align: left;
+  display: none;
+
+  &.active {
+    display: block;
+    text-align: left;
+  }
 }
 
 .enter-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: none;
+
+  &.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 
   .enter-msg {
     margin-right: 30px;
-  }
-}
-
-.inp-wrap {
-  border-bottom: 2px solid #222;
-  height: $inp_text_height;
-
-  .inp {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    height: 100%;
-    font-size: $font_size;
-  }
-}
-
-.inp-name {
-  display: inline-block;
-  width: 120px;
-}
-
-[class^="btn-"] {
-  display: inline-block;
-  padding: 5px 10px;
-  text-align: center;
-  font-size: 15px;
-  outline: 0;
-  border: 3px solid #222;
-  background: #fff;
-  cursor: pointer;
-}
-
-/* [common] tab components */
-.tab-wrap {
-  .tab-menu {
-    .btn-tab {
-      height: 42px;
-    }
   }
 }

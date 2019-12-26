@@ -4,8 +4,7 @@ const form = document.querySelector(".js-enter-form"),
   intro = document.querySelector(".js-introduce");
 
 const USER_LS = "currentUser",
-  SHOWING_CN = "showing",
-  HIDE_CN = "hide";
+  SHOWING_CN = "active";
 
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
@@ -24,11 +23,14 @@ function askForName() {
 }
 
 function paintGreeting(text) {
-  form.classList.add(HIDE_CN);
+  // 폼 숨김
+  form.classList.remove(SHOWING_CN);
+
+  // 인트로박스 쇼잉
   greeting.classList.add(SHOWING_CN);
   intro.classList.add(SHOWING_CN);
 
-  greeting.innerText = `Hello ${text}`;
+  greeting.innerText = `Hello, ${text}❤️`;
 }
 
 function loadName() {
