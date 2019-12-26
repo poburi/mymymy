@@ -148,7 +148,9 @@ ul {
   font-size: 15px;
   outline: 0;
   border: 3px solid #222;
-  background: #fff; }
+  background: #fff;
+  cursor: pointer; }
 
-.tab-contents:not(.showing) {
-  display: none; }
+/* [common] tab components */
+.tab-wrap .tab-menu .btn-tab {
+  height: 42px; }

@@ -1,5 +1,5 @@
 $(function() {
-  $(".js-tab-menu button").on("click", function() {
+  $(".js-tab-menu button span").on("click", function() {
     console.log("sdlkfjsldkfjsdlk");
   });
 });
