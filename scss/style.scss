@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap");
+@import "_reset";
+
+.introduce-box {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.common-enter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+
+  &-wrap {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    padding: 35px 80px;
+    margin: 0 auto;
+    border: 5px solid #222;
+    text-align: center;
+  }
+}
+
+.welcome-msg {
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-family: $black_han_sans;
+}
+
+.introduce-box {
+  text-align: left;
+}
+
+.enter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  .enter-msg {
+    margin-right: 30px;
+  }
+}
+
+.inp-wrap {
+  border-bottom: 2px solid #222;
+  height: $inp_text_height;
+
+  .inp {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-size: $font_size;
+  }
+}
+
+.inp-name {
+  display: inline-block;
+  width: 120px;
+}
+
+[class^="btn-"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 15px;
+  outline: 0;
+  border: 3px solid #222;
+  background: #fff;
+}
+
+.tab-contents {
+  &:not(.showing) {
+    display: none;
+  }
+}

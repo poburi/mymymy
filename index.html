@@ -5,11 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="dist/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/lib/jquery-ui.min.js"></script>
     <title>gdgd</title>
   </head>
 
   <body>
-    gdgdgd
+
+    <div class="common-enter-box">
+      <div class="common-enter-box-wrap">
+
+        <p class="welcome-msg js-greetings">Hello, stranger!<br>What is your name?</p>
+
+        <form class="enter-form js-enter-form">
+          <div class="enter-msg">
+            <span>My name is</span>
+            <span class="inp-wrap inp-name"><input type="text" class="inp"></span>
+            <span>!</span>
+          </div>
+          <button type="submit" class="btn-enter">enter</button>
+        </form>
+
+        <div class="introduce-box js-introduce">
+
+          <div class="tab js-tab-wrap">
+            <div tab-class="tab-menu js-tab-menu">
+              <button type="button" data-tab="intro" class="tab-menu-item">소개</button>
+              <button type="button" data-tab="graphy" class="tab-menu-item">경력</button>
+            </div>
+
+            <div id="intro" class="tab-contents js-tab-contents showing">
+              <div class="section intro">
+                <p>소개</p>
+                <div class="pic-desc-wrap">
+                  <div class="pic">
+                    <img src="https://avatars3.githubusercontent.com/u/45615584?s=460&v=4" alt="me">
+                  </div>
+                  <div class="desc">
+                    반갑습니다.<br>
+                    저는 웹 퍼블리셔 한희송입니다.<br>
+                    현재 필웨이에서 프리랜서로 일하고 있습니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="graphy" class="tab-contents js-tab-contents">
+              <div class="section graphy">
+                <p>경력사항</p>
+                <dl>
+                  <dt>디아즈솔루션 (2017.05 ~ 2019.02)</dt>
+                  <dd>사이트 제작</dd>
+                  <dd>랜딩 이벤트 페이지 제작</dd>
+                  <dd>솔루션 개발 (PHP)</dd>
+
+                  <dt>필웨이 (2019.08 ~ now)</dt>
+                  <dd>UI 개발</dd>
+                  <dd>페이지 마크업</dd>
+                  <dd>개발 스킨 작업 지원</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="dist/js/common.js"></script>
+    <script src="dist/js/greeting.js"></script>
   </body>
 
 </html>
