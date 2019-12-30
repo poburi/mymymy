@@ -3,11 +3,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="dist/js/lib/jquery-3.4.1.min.js"></script>
-    <script src="dist/js/lib/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="./resources/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="./resources/js/lib/jquery-ui.min.js"></script>
+    <script src="./resources/js/plugin/jquery.touchSlider.js"></script>
     <title>MyMyMy</title>
   </head>
 
@@ -22,63 +24,319 @@
           <div class="enter-msg">
             <span>My name is</span>
             <span class="inp-wrap inp-name"><input type="text" class="inp"></span>
-            <span>!</span>
           </div>
           <button type="submit" class="btn-enter">enter</button>
         </form>
 
         <div class="introduce-box js-introduce">
-
-          <div class="tab-wrap js-tab-wrap">
-            <div class="tab-menu js-tab-menu">
-              <button type="button" data-tab="intro" class="btn-tab"><span>소개</span></button>
-              <button type="button" data-tab="graphy" class="btn-tab"><span>경력</span></button>
+          <!-- 소개 -->
+          <div class="intro section">
+            <div class="intro-wrap">
+              <div class="pic">
+                <img src="https://avatars3.githubusercontent.com/u/45615584?s=460&v=4" alt="me">
+              </div>
+              <div class="lead">
+                안녕하세요. UI/UX 개발자 한희송입니다. 베스트브라더스에서 웹 개발과 이벤트 랜딩 페이지를 만든 경험이 있습니다. 협업이 필요한 큰 프로젝트에서 git을 사용하였고, 현재 프리랜서로 필웨이에서 PC와 MOBILE 리뉴얼을 맡아 진행하고 있습니다. 프론트개발에 관심이 많아서 최근 리액트로 이것 저것 만들어 보고 있습니다.
+              </div>
             </div>
+          </div>
+          <!-- //소개 -->
 
-            <!-- 소개 -->
-            <div id="intro" class="tab-contents js-tab-contents">
-              <div class="section intro">
-                <p>소개</p>
-                <div class="pic-desc-wrap">
-                  <div class="pic">
-                    <img src="https://avatars3.githubusercontent.com/u/45615584?s=460&v=4" alt="me">
-                  </div>
-                  <div class="desc">
-                    반갑습니다.<br>
-                    저는 웹 퍼블리셔 한희송입니다.<br>
-                    현재 필웨이에서 프리랜서로 일하고 있습니다.
+          <hr class="component-division">
+
+          <!-- 경력 -->
+          <div class="experience section">
+            <ul class="timeline">
+              <li class="timeline-block">
+                <p class="date">2019.08 - 12</p>
+                <dl class="content">
+                  <dt>
+                    <span class="company">필웨이</span>
+                    <span class="position component-bar">프리랜서</span>
+                  </dt>
+                  <dd>UI/UX 컴포넌트 개발</dd>
+                  <dd>PC/MOBILE(반응형) 웹 퍼블리싱</dd>
+                  <dd>PC 리뉴얼 2.0 SCSS 가이드 작업</dd>
+                  <dd>GIT 프로젝트 관리</dd>
+                </dl>
+              </li>
+              <li class="timeline-block">
+                <p class="date">2017.05 - 02</p>
+                <dl class="content">
+                  <dt>
+                    <span class="company">베스트브라더스</span>
+                    <span class="position component-bar">주임</span>
+                  </dt>
+                  <dd>이벤트 랜딩 페이지 퍼블리싱</dd>
+                  <dd>UI/UX 컴포넌트 개발</dd>
+                  <dd>웹 개발(PHP, MYSQL)</dd>
+                </dl>
+              </li>
+              <li class="timeline-block">
+                <p class="date">2015.09 - </p>
+                <dl class="content">
+                  <dt>
+                    <span class="company">MBC</span>
+                    <span class="position component-bar">사원</span>
+                  </dt>
+                  <dd>회계시스템 유지보수</dd>
+                  <dd>데이터베이스 관리</dd>
+                  <dd>그룹웨어 이슈 대응</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!-- //경력 -->
+
+          <hr class="component-division">
+
+          <!-- 스킬 -->
+          <div class="skill section">
+            <ul class="skill-wrap">
+              <li class="skill-bar">
+                <span class="skill-label">HTML</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                </div>
+              </li>
+              <li class="skill-bar">
+                <span class="skill-label">CSS/SCSS</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                </div>
+              </li>
+              <li class="skill-bar">
+                <span class="skill-label">JavaScript</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="unchecked">unchecked</span>
+                  <span class="unchecked">unchecked</span>
+                </div>
+              </li>
+              <li class="skill-bar">
+                <span class="skill-label">jQuery</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="unchecked">unchecked</span>
+                </div>
+              </li>
+              <li class="skill-bar">
+                <span class="skill-label">REACT</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="unchecked">unchecked</span>
+                  <span class="unchecked">unchecked</span>
+                  <span class="unchecked">unchecked</span>
+                </div>
+              </li>
+              <li class="skill-bar">
+                <span class="skill-label">PHP</span>
+                <div class="skill-level">
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="checked">checked</span>
+                  <span class="unchecked">unchecked</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //스킬 -->
+
+          <hr class="component-division">
+
+          <!-- 포트폴리오 -->
+          <div class="portfolio">
+            <div class="portfolio-wrap">
+
+              <!-- 탭전체 -->
+              <div class="tab-wrap js-tab-wrap">
+
+                <!-- 탭메뉴 -->
+                <div class="tab-menu js-tab-menu">
+                  <button type="button" data-tab="tabid-01" class="btn-tab showing">필웨이</button>
+                  <button type="button" data-tab="tabid-02" class="btn-tab">베스트브라더스</button>
+                  <button type="button" data-tab="tabid-03" class="btn-tab">기타(아르바이트)</button>
+                </div>
+                <!-- //팁메뉴 -->
+
+                <!-- 탭:필웨이 -->
+                <div id="tabid-01" class="tab-contents js-tab-contents">
+                  <div class="slidertype-01 js-slider">
+                    <ul class="slider-container">
+                      <li class="slider-item">
+                        <a href="http://www.feelway.com/" class="pf-link" target="_blank">
+                        <dl class="pf-content">
+                          <dt class="pf-img">
+                            <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
+                          </dt>
+                          <dd class="pf-title">필웨이 1.5 오픈</dd>
+                        </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="https://feelwaym.ju-rie.net/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
+                            </dt>
+                            <dd class="pf-title">필웨이 2.0 리뉴얼(MOBILE)</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="https://feelwaym.ju-rie.net/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
+                            </dt>
+                            <dd class="pf-title">필웨이 2.0 리뉴얼(PC)</dd>
+                          </dl>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+                <!-- //필웨이 -->
+              
+                <!-- 탭:베스트브라더스 -->
+                <div id="tabid-02" class="tab-contents js-tab-contents" style="display:none;">
+                  <div class="slidertype-01 js-slider">
+                    <ul>
+                      <li class="slider-item">
+                        <a href="http://www.clearplus.co.kr/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-incheon.PNG" alt="인천투명플러스치과홈페이지" />
+                            </dt>
+                            <dd class="pf-title">인천투명플러스치과</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://heesong1.deaz.co.kr/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-amar.PNG" alt="아마르한의원홈페이지" />
+                            </dt>
+                            <dd class="pf-title">아마르한의원</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://t3.deaz.co.kr/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-ulsan.PNG" alt="심플치과의원홈페이지" />
+                            </dt>
+                            <dd class="pf-title">심플치과의원</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://landing.deaz.co.kr/view/ntxfb3277c/1?test=2018-03-30" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-ox.PNG" alt="OX게임형 랜딩 페이지" />
+                            </dt>
+                            <dd class="pf-title">OX 게임형</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://landing.deaz.co.kr/view/ntTf1B2778/52?test=2017-05-11" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-jackpat.PNG" alt="잭팟룰렛게임형랜딩이벤트페이지" />
+                            </dt>
+                            <dd class="pf-title">잭팟룰렛 게임형</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://landing.deaz.co.kr/view/NUC9b42781/1?test=2017-12-08" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-kingkong.PNG" alt="사다리이벤트" />
+                            </dt>
+                            <dd class="pf-title">사다리 이벤트</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="http://landing.deaz.co.kr/view/ntTf1B2778/52?test=2017-06-09" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-event1.PNG" alt="이벤트페이지" />
+                            </dt>
+                            <dd class="pf-title">이벤트 랜딩</dd>
+                          </dl>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //베스트브라더스 -->
+
+                <!-- 탭:기타 -->
+                <div id="tabid-03" class="tab-contents js-tab-contents" style="display:none;">
+                  <div class="slidertype-01 js-slider">
+                    <ul>
+                    <li class="slider-item">
+                      <a href="http://www.nowamc.co.kr/" class="pf-link" target="_blank">
+                        <dl class="pf-content">
+                          <dt class="pf-img">
+                            <img src="./resources/images/bg-pf-now.PNG" alt="나우동물의료센터" />
+                          </dt>
+                          <dd class="pf-title">나우동물의료센터</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //기타 -->
+
               </div>
+              <!-- //탭 전체 -->
+
             </div>
-            <!-- //소개 -->
-
-            <div id="graphy" class="tab-contents js-tab-contents" style="display: none;">
-              <div class="section graphy">
-                <p>경력사항</p>
-                <dl>
-                  <dt>디아즈솔루션 (2017.05 ~ 2019.02)</dt>
-                  <dd>사이트 제작</dd>
-                  <dd>랜딩 이벤트 페이지 제작</dd>
-                  <dd>솔루션 개발 (PHP)</dd>
-
-                  <dt>필웨이 (2019.08 ~ now)</dt>
-                  <dd>UI 개발</dd>
-                  <dd>페이지 마크업</dd>
-                  <dd>개발 스킨 작업 지원</dd>
-                </dl>
-              </div>
-            </div>
-
           </div>
+          <!-- //포트폴리오 -->
+          
+          <hr class="component-division">
+
+          <!-- 연락 -->
+          <div class="contact section">
+            <ul>
+              <li>
+                <a href="https://codepen.io/ianchen0419/" target="_blank"><i class="fas fa-phone-alt"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- //연락 -->
 
         </div>
 
       </div>
     </div>
 
-    <script src="dist/js/common.js"></script>
-    <script src="dist/js/greeting.js"></script>
+    <script src="./resources/js/greeting.js"></script>
+    <script src="./resources/js/common.js"></script>
   </body>
 
 </html>

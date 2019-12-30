@@ -20,6 +20,9 @@ function handleSubmit(event) {
 function askForName() {
   form.classList.add(SHOWING_CN);
   form.addEventListener("submit", handleSubmit);
+  console.log('sdfkjsdf')
+  
+
 }
 
 function paintGreeting(text) {
@@ -31,6 +34,13 @@ function paintGreeting(text) {
   intro.classList.add(SHOWING_CN);
 
   greeting.innerText = `Hello, ${text}❤️`;
+
+  $(function() {
+		$('.js-slider').touchSlider({
+			view: 3,
+			gap: 20,
+		});
+  });
 }
 
 function loadName() {

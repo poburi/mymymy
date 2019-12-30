@@ -16,5 +16,10 @@ $(function() {
       .closest(".js-tab-wrap")
       .find("#" + target + ".js-tab-contents")
       .show();
+
+      $('.js-slider').touchSlider({
+			view: 3,
+			gap: 20,
+		});
   });
 });

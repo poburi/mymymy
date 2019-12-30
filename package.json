@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "http-server ./",
+    "scss": "node-sass -w resources/scss -o resources/css --source-map true --output-style expanded"
+  },
   "dependencies": {
     "node-sass": "^4.13.0"
   }

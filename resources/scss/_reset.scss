@@ -1,0 +1,85 @@
+$black_han_sans: "Black Han Sans", sans-serif;
+$font_color: #222;
+$font_size: 16px;
+$line_height: percentage(20px / $font_size);
+$enter_box_width: 80%;
+$inp_text_height: 28px;
+
+html {
+  width: 100%;
+
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 14px/1.2 "Noto Sans KR", "Noto Sans", "Apple SD Gothic Neo", "맑은 고딕",
+    "Malgun Gothic", "돋움", "dotum", Helvetica, Arial, Verdana, Tahoma,
+    sans-serif;
+}
+
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+th,
+td,
+p,
+button,
+span {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+fieldset,
+img,
+abbr,
+acronym {
+  border: 0 none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
