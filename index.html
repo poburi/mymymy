@@ -346,18 +346,22 @@
           <hr class="component-division">
 
           <!-- 연락 -->
-          <script>
+          <script src="text/javascri11pt">
             var bigOne = document.getElementById('bigOne');
               var dbRef = firebase.database().ref().child('name');
               dbRef.on('value', snap => bigOne.innerText = snap.val());
           </script>
-          <div class="contact section">
+          <script>
+            var database = firebase.database();
+            console.log(database);
+          </script>
+          <div class="contact section" style="display:none;">
             <div class="contact-wrap">
               <form action="">
                 <fieldset>
                   <legend>연락</legend>
                   <dl>
-                    <dt id="bigOne">dd</dt>
+                    <dt id="bigOne">test</dt>
                     <dd></dd>
                     <dt>이름</dt>
                     <dd><input type="text"></dd>
