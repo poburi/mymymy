@@ -19,7 +19,10 @@ body {
   line-height: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
 }
 
 h1,
@@ -33,7 +36,7 @@ h6 {
     sans-serif;
 }
 
-
+body,
 div,
 dl,
 dt,

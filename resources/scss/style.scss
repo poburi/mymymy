@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap");
 @import "_reset";
 
-$emColor: #FF7F50;
-$emBase: #FFAD8F;
+$emColor: #ffcd00;
+$emBase: #fee995;
 
 
 /* [common] form element components */
@@ -201,13 +201,16 @@ $emBase: #FFAD8F;
       .skill-label {
         display: inline-block;
         width: 30%;
+        min-width: 70px;
         line-height: 1;
         font-size: 15px;
+        vertical-align: middle;
       }
 
       .skill-level {
         display: inline-block;
         width: 70%;
+        vertical-align: middle;
       }
     }
   }
@@ -321,13 +324,24 @@ $emBase: #FFAD8F;
 }
 
 
-/* 320 ~ 360 */
-@media (min-width: 360px) and (max-width: 680px) {
+/* 320 ~ 680*/
+@media (max-width: 680px) {
+  .section {
+    padding: 0 15px;
+  }
+
+  .welcome-msg {
+    text-align: center;
+  }
+
   .intro-wrap {
     display: block;
     
     .pic {
       margin: 0 auto 30px auto;
     }
+ 
   }
+
+   
 }
