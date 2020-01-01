@@ -373,4 +373,14 @@ ul {
   line-height: 1.3;
 }
 
+/* 320 ~ 360 */
+@media (min-width: 360px) and (max-width: 680px) {
+  .intro-wrap {
+    display: block;
+  }
+  .intro-wrap .pic {
+    margin: 0 auto 30px auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

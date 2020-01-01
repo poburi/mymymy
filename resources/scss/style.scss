@@ -319,3 +319,15 @@ $emBase: #FFAD8F;
     line-height: 1.3;
   }
 }
+
+
+/* 320 ~ 360 */
+@media (min-width: 360px) and (max-width: 680px) {
+  .intro-wrap {
+    display: block;
+    
+    .pic {
+      margin: 0 auto 30px auto;
+    }
+  }
+}
