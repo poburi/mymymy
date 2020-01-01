@@ -393,6 +393,28 @@ $emBase: #fee995;
 }
 
 
+.footer {
+  &-wrap {
+    text-align: center;
+
+    p {
+      color: #9a9a9a;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .copyright-owner {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 4px;
+      background-color: rgba(0,0,0,0.03);
+      border-radius: 4px;
+    }
+  }
+}
+
+
+
 /* 320 ~ 680*/
 @media (max-width: 680px) {
   .section {

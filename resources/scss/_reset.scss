@@ -69,6 +69,11 @@ span {
   -webkit-tap-highlight-color: transparent;
 }
 
+fieldset legend {
+  font-size: 0;
+  line-height: 0;
+}
+
 fieldset,
 img,
 abbr,

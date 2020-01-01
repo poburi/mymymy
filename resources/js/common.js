@@ -22,4 +22,18 @@ $(function() {
 			gap: 20,
 		});
   });
+
+  printedYear();
 });
+
+function getYear() {
+  var _date = new Date();
+
+  var year = _date.getFullYear();
+  return year;
+}
+
+function printedYear(){
+  var todayYear = getYear();
+  $(".year").text(todayYear);
+}
