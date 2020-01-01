@@ -70,13 +70,46 @@ $emBase: #fee995;
       button {
         position: absolute;
         top: 50%;
+        font-size: 0;
+        border: 0;
+        background: transparent;
+        transform: translate(0,-50%);
+
+        &:after {
+          color: $emColor;
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+        }
 
         &.ts-prev {
+          position: absolute;
           left: 0;
+         
+
+          &:after {
+            content: "\f0a8";
+            position: absolute;
+            left:-10px;
+            font-size: 28px;
+           
+          }
         }
 
         &.ts-next {
           right: 0;
+
+          &:after {
+            content: "\f0a9";
+            position: absolute;
+            right:-10px;
+            font-size: 28px;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+          }
         }
       }
     }
