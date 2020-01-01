@@ -323,20 +323,14 @@
           <hr class="component-division">
 
           <!-- 연락 -->
-          <div class="contact section" st1yle="display:none;">
+          <div class="contact section">
             <div class="contact-wrap">
               <form action="">
                 <fieldset>
                   <legend>연락</legend>
                   <dl>
-                    <dt id="bigOne">test</dt>
+                    <dt id="bigOne">firebase test</dt>
                     <dd></dd>
-                    <dt>이름</dt>
-                    <dd><input type="text"></dd>
-                    <dt>연락처</dt>
-                    <dd><input type="text"></dd>
-                    <dt>내용</dt>
-                    <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
                   </dl>
                 </fieldset>
               </form>
@@ -389,6 +383,7 @@
       var bigOne = document.getElementById('bigOne');
       var dbRef = firebase.database().ref().child('text');
       dbRef.on('value', snap => bigOne.innerText = snap.val());
+      console.log(dbRef);
     </script>
  
 
