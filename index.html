@@ -10,29 +10,6 @@
     <script src="./resources/js/lib/jquery-3.4.1.min.js"></script>
     <script src="./resources/js/lib/jquery-ui.min.js"></script>
     <script src="./resources/js/plugin/jquery.touchSlider.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-    
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-    
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDnEwfMQ0QfP0Mrr7VAnC50_0UlEiDfQBc",
-        authDomain: "mymymy-1f526.firebaseapp.com",
-        databaseURL: "https://mymymy-1f526.firebaseio.com",
-        projectId: "mymymy-1f526",
-        storageBucket: "mymymy-1f526.appspot.com",
-        messagingSenderId: "934732989373",
-        appId: "1:934732989373:web:9937bba1c26875090c88d4",
-        measurementId: "G-VGCHZSW945"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
     <title>UI/UX 개발자 한희송</title>
   </head>
 
@@ -346,16 +323,7 @@
           <hr class="component-division">
 
           <!-- 연락 -->
-          <script src="text/javascri11pt">
-            var bigOne = document.getElementById('bigOne');
-              var dbRef = firebase.database().ref().child('name');
-              dbRef.on('value', snap => bigOne.innerText = snap.val());
-          </script>
-          <script>
-            var database = firebase.database();
-            console.log(database);
-          </script>
-          <div class="contact section" style="display:none;">
+          <div class="contact section" st1yle="display:none;">
             <div class="contact-wrap">
               <form action="">
                 <fieldset>
@@ -391,9 +359,39 @@
 
       </div>
     </div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script src="./resources/js/greeting.js"></script>
     <script src="./resources/js/common.js"></script>
+   
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDnEwfMQ0QfP0Mrr7VAnC50_0UlEiDfQBc",
+        authDomain: "mymymy-1f526.firebaseapp.com",
+        databaseURL: "https://mymymy-1f526.firebaseio.com",
+        projectId: "mymymy-1f526",
+        storageBucket: "mymymy-1f526.appspot.com",
+        messagingSenderId: "934732989373",
+        appId: "1:934732989373:web:9937bba1c26875090c88d4",
+        measurementId: "G-VGCHZSW945"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      //console.log(firebase);
+      //var database = firebase.database();
+      //console.log(database);    
+      var bigOne = document.getElementById('bigOne');
+      var dbRef = firebase.database().ref().child('text');
+      dbRef.on('value', snap => bigOne.innerText = snap.val());
+    </script>
+ 
+
   </body>
 
 </html>
