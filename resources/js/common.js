@@ -18,13 +18,18 @@ $(function() {
       .show();
 
       $('.js-slider').touchSlider({
-			view: 3,
-			gap: 20,
+			view: 2,
+			gap: 10,
 		});
   });
 
   printedYear();
 });
+
+/* global variable */
+var f = $(".contact-form"),
+  inp = f.find(".inp");
+
 
 function getYear() {
   var _date = new Date();
@@ -37,3 +42,18 @@ function printedYear(){
   var todayYear = getYear();
   $(".year").text(todayYear);
 }
+
+$(".inp").focusout(function () {
+  if ($(this).val() == '') {
+    $(this).closest(".inp-wrap").addClass("error");
+  }
+  else {
+
+    // If it is not blank. 
+    $(this).closest(".inp-wrap").removeClass("error");
+  }
+}).focusin(function(){
+  $(this).closest(".inp-wrap").removeClass("error");
+})
+ 
+ 

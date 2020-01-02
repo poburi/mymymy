@@ -5,6 +5,7 @@
 $emColor: #ffcd00;
 $emBase: #fee995;
 $inpBorder: #e6e6e6;
+$errorColor: #ec5026;
  
 
 /* [common] form element components */
@@ -31,6 +32,31 @@ $inpBorder: #e6e6e6;
     height: 100px;
     padding: 5px;
     resize: none;
+  }
+}
+
+.errors-list {
+  display: none;
+}
+
+.inp-wrap.error {
+  [type="text"],
+  textarea {
+     border: 1px solid $errorColor;
+  }
+
+  .inp-bottom {
+    .errors-list{
+      display: block;
+
+      .error-text {
+        margin-top: 5px;
+        padding-left: 20px;
+        background: url(../images/icon-error-text.svg) no-repeat left 0/14px;
+        font-size: 12px;
+        color: $errorColor;
+      }
+    }
   }
 }
  

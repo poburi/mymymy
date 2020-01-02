@@ -15,8 +15,13 @@ firebase.initializeApp(firebaseConfig);
 const addUserBtnUI = document.querySelector(".subbtn-submit");
 addUserBtnUI.addEventListener("click", saveHandle);
 
-
 function saveHandle(){
+ 
+  if(inp.val() == ''){
+    alert("빈 칸을 모두 채워주세요.");
+    return false;
+  }
+
   const dbRef = firebase.database().ref();
   const usersRef = dbRef.child('users');
 
@@ -34,7 +39,10 @@ function saveHandle(){
   }
 
   usersRef.push(newUser, function(){
-    alert("내용이 전달되었습니다!");
-    console.log(newUser)
+    if (confirm("확인 후 연락드리겠습니다.")) document.location = window.location.pathname;
   })
 }
+
+
+
+ 

@@ -15,14 +15,13 @@ body {
   width: 100%;
   min-width: 320px;
   height: 100%;
-  font-size: 16px;
   line-height: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
+  font: 14px/1.2 "Noto Sans KR", "Noto Sans", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "돋움", "dotum", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
 }
 
 h1,

@@ -1,24 +1,14 @@
 {
   "users": [
     {
-      "name": "Alex Meraz",
+      "name": "김과장",
       "contents": "안녕, 잘지내니?",
-      "email": "ameraz@email.com"
+      "phone": "010-2569-0977"
     },
     {
-      "name": "Mohammed Rafi",
+      "name": "최마리",
       "contents": "어때 잘지냈어?",
-      "email": "mrafi@email.com"
-    },
-    {
-      "name": "Raja Tamil",
-      "contents": "상담드립니다",
-      "email": "rtamil@email.com"
-    },
-    {
-      "name": "Sundar Pichai",
-      "contents": "테스트입니다",
-      "email": "spichai@email.com"
+      "phone": "010-8437-4123"
     }
   ]
 }

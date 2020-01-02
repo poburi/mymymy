@@ -36,7 +36,7 @@
               </div>
               <div class="lead">
                 FE 개발자로 성장중인 <em>퍼블리셔 한희송</em>입니다.
-                2019년 12월 31일까지 필웨이 리뉴얼 프로젝트를 맡아 진행하였습니다. FE 개발적 이슈에 관심이 많습니다. 리액트 CRA를 이용한 토이프로젝트를 진행하고 있습니다. 아래 JavaScript로 Firebase를 연동시킨 Contact로 정보를 보내주실 수 있습니다. 감사합니다.
+                2019년 12월 31일까지 필웨이 리뉴얼 프로젝트를 맡아 진행하였습니다. <em>FE 개발적 이슈에 관심이 많습니다.</em> 리액트 CRA를 이용한 토이프로젝트를 진행하고 있습니다. 아래 JavaScript로 Firebase를 연동시킨 Contact로 정보를 보내주실 수 있습니다. 감사합니다.
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@
                           <dt class="pf-img">
                             <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
                           </dt>
-                          <dd class="pf-title">필웨이 1.5 오픈</dd>
+                          <dd class="pf-title">1.5 오픈</dd>
                         </dl>
                         </a>
                       </li>
@@ -194,7 +194,7 @@
                             <dt class="pf-img">
                               <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
                             </dt>
-                            <dd class="pf-title">필웨이 2.0 리뉴얼(MOBILE)</dd>
+                            <dd class="pf-title">MOBILE 2.0</dd>
                           </dl>
                         </a>
                       </li>
@@ -204,7 +204,7 @@
                             <dt class="pf-img">
                               <img src="./resources/images/bg-pf-feelway.PNG" alt="필웨이 이미지" />
                             </dt>
-                            <dd class="pf-title">필웨이 2.0 리뉴얼(PC)</dd>
+                            <dd class="pf-title">PC 2.0</dd>
                           </dl>
                         </a>
                       </li>
@@ -312,7 +312,7 @@
                             <dt class="pf-img">
                               <img src="./resources/images/bg-pf-mymymy.PNG" alt="Mymymy" />
                             </dt>
-                            <dd class="pf-title">FireBase Data 연동</dd>
+                            <dd class="pf-title">IMS(반응형+DB연동)</dd>
                           </dl>
                         </a>
                       </li>
@@ -333,19 +333,40 @@
           <!-- 연락 -->
           <div class="contact section">
             <div class="contact-wrap">
-              <form>
+              <form name="contact" class="contact-form">
                 <fieldset>
                   <legend>연락</legend>
                   <dl class="user-form">
                     
                     <dt class="label">이름</dt>
-                    <dd class="inp-wrap"><input type="text" class="inp user-input" data-key='name' /></dd>
+                    <dd class="inp-wrap">
+                      <input type="text" class="inp user-input" data-key='name' required />
+                      <div class="inp-bottom">
+                        <ul class="errors-list">
+                          <li class="error-text">유효성이 충족되지 않습니다.</li>
+                        </ul>
+                      </div>
+                    </dd>
                   
-                    <dt class="label">이메일</dt>
-                    <dd class="inp-wrap"><input type="text" class="inp user-input" data-key='email' /></dd>
+                    <dt class="label">연락처</dt>
+                    <dd class="inp-wrap">
+                      <input type="text" class="inp user-input" data-key='phone' required />
+                      <div class="inp-bottom">
+                        <ul class="errors-list">
+                          <li class="error-text">유효성이 충족되지 않습니다.</li>
+                        </ul>
+                      </div>
+                    </dd>
 
                     <dt class="label">내용</dt>
-                    <dd class="inp-wrap"><textarea class="inp user-input" data-key='contents'></textarea></dd>
+                    <dd class="inp-wrap">
+                      <textarea class="inp user-input" data-key='contents' required></textarea>
+                      <div class="inp-bottom">
+                        <ul class="errors-list">
+                          <li class="error-text">유효성이 충족되지 않습니다.</li>
+                        </ul>
+                      </div>
+                    </dd>
 
                   </dl>
                 </fieldset>

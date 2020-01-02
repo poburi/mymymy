@@ -34,8 +34,8 @@ function paintGreeting(text) {
 
   $(function() {
 		$('.js-slider').touchSlider({
-			view: 3,
-			gap: 20,
+			view: 2,
+			gap: 10,
 		});
   });
 }
