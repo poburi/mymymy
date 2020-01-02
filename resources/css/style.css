@@ -94,16 +94,29 @@ ul {
 
 /* [common] form element components */
 .inp-wrap {
-  border-bottom: 2px solid #222;
-  height: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.inp-wrap input[type="text"] {
+  height: 35px;
+  padding: 0 5px;
 }
 
 .inp-wrap .inp {
-  border: 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
   outline: 0;
   width: 100%;
   height: 100%;
   font-size: 16px;
+}
+
+.inp-wrap textarea.inp {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  resize: none;
 }
 
 .inp-name {
@@ -112,14 +125,19 @@ ul {
 }
 
 /* [common] button components */
-[class^="btn-"] {
+.btn-wrap button {
+  width: 100%;
+}
+
+[class^="subbtn-"] {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 0;
   text-align: center;
   font-size: 15px;
   outline: 0;
-  border: 3px solid #222;
-  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  background: #ffcd00;
   cursor: pointer;
 }
 
@@ -197,6 +215,8 @@ ul {
 }
 
 .common-enter-box {
+  display: flex;
+  align-items: center;
   height: 100%;
 }
 
@@ -209,6 +229,7 @@ ul {
 .welcome-msg {
   margin-top: 20px;
   margin-bottom: 40px;
+  text-align: center;
   font-size: 32px;
   font-family: "Black Han Sans", sans-serif;
 }
@@ -233,6 +254,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .enter-form .enter-msg {
@@ -292,9 +314,20 @@ ul {
 }
 
 .timeline .timeline-block .content dt {
-  font-size: 0;
-  line-height: 0;
+  position: relative;
   margin-bottom: 15px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.timeline .timeline-block .content dt:before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  padding: 5px;
+  background: #ffcd00;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 .timeline .timeline-block .content dt span {
@@ -469,6 +502,14 @@ ul {
   padding: 2px 4px;
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
+}
+
+.contact-wrap .user-form .label {
+  height: 30px;
+}
+
+.contact-wrap .user-form .inp-wrap {
+  margin-bottom: 15px;
 }
 
 /* 320 ~ 680*/

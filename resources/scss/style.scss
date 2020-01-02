@@ -4,21 +4,36 @@
 
 $emColor: #ffcd00;
 $emBase: #fee995;
-
+$inpBorder: #e6e6e6;
+ 
 
 /* [common] form element components */
 .inp-wrap {
-  border-bottom: 2px solid #222;
-  height: $inp_text_height;
+  width: 100%;
+  height: 100%;
+
+  input[type="text"] {
+    height: 35px;
+    padding: 0 5px;
+  }
 
   .inp {
-    border: 0;
+    border: 1px solid $inpBorder;
+    border-radius: 4px;
     outline: 0;
     width: 100%;
     height: 100%;
     font-size: $font_size;
   }
+
+  textarea.inp {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    resize: none;
+  }
 }
+ 
 
 .inp-name {
   display: inline-block;
@@ -26,14 +41,21 @@ $emBase: #fee995;
 }
 
 /* [common] button components */
-[class^="btn-"] {
+.btn-wrap {
+  button {
+    width: 100%;
+  }
+}
+
+[class^="subbtn-"] {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 0;
   text-align: center;
   font-size: 15px;
   outline: 0;
-  border: 3px solid #222;
-  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  background: $emColor;
   cursor: pointer;
 }
 
@@ -117,6 +139,8 @@ $emBase: #fee995;
 }
 
 .common-enter-box {
+  display: flex;
+  align-items: center;
   height: 100%;
 
   &-wrap {
@@ -129,6 +153,7 @@ $emBase: #fee995;
 .welcome-msg {
   margin-top: 20px;
   margin-bottom: 40px;
+  text-align: center;
   font-size: 32px;
   font-family: $black_han_sans;
 }
@@ -152,6 +177,7 @@ $emBase: #fee995;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
   }
 
   .enter-msg {
@@ -220,9 +246,20 @@ $emBase: #fee995;
       margin-top: -17px;
 
       dt {
-        font-size: 0;
-        line-height:0;
+        position: relative;
         margin-bottom: 15px;
+        line-height:0;
+        font-size: 0;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: -27px;
+          padding: 5px;
+          background: $emColor;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
         
 
         span {
@@ -356,8 +393,6 @@ $emBase: #fee995;
     box-sizing: border-box;
     }
   }
-
- 
 }
 
 .pf-link{
@@ -413,7 +448,19 @@ $emBase: #fee995;
   }
 }
 
+.contact {
+  &-wrap {
+    .user-form {
+      .label {
+        height: 30px;
+      }
 
+      .inp-wrap {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
 
 /* 320 ~ 680*/
 @media (max-width: 680px) {

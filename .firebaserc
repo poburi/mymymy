@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "mymymy-1f526"
+    "default": "mymymy-1f526",
+    "mymymy": "mymymy-1f526"
   },
   "hosting": {
     "site": "https://poburi.github.io/mymymy/",

@@ -22,10 +22,9 @@
 
         <form class="enter-form js-enter-form">
           <div class="enter-msg">
-            <span>My name is</span>
+            <span>My name is </span>
             <span class="inp-wrap inp-name"><input type="text" class="inp"></span>
           </div>
-          <button type="submit" class="btn-enter">enter</button>
         </form>
 
         <div class="introduce-box js-introduce">
@@ -39,6 +38,7 @@
                 안녕하세요. 프론트앤드 개발자로 열심히 성장중인 <em>UI/UX 퍼블리셔 한희송</em>입니다. 
                 현재 프리랜서로 필웨이에서 PC와 MOBILE 리뉴얼을 맡아 진행하고 있습니다.
                 최근 리액트에 빠져있어서 리액트를 이용하여 이것저것 만들어 보고 있습니다.
+                아래 연락처로 연락을 주시면 firebase에 정보가 저장됩니다.
               </div>
             </div>
           </div>
@@ -298,16 +298,26 @@
                 <div id="tabid-03" class="tab-contents js-tab-contents" style="display:none;">
                   <div class="slidertype-01 js-slider">
                     <ul>
-                    <li class="slider-item">
-                      <a href="http://www.nowamc.co.kr/" class="pf-link" target="_blank">
-                        <dl class="pf-content">
-                          <dt class="pf-img">
-                            <img src="./resources/images/bg-pf-now.PNG" alt="나우동물의료센터" />
-                          </dt>
-                          <dd class="pf-title">나우동물의료센터</dd>
-                        </dl>
-                      </a>
-                    </li>
+                      <li class="slider-item">
+                        <a href="http://www.nowamc.co.kr/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-now.PNG" alt="나우동물의료센터" />
+                            </dt>
+                            <dd class="pf-title">나우동물의료센터</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li class="slider-item">
+                        <a href="https://poburi.github.io/mymymy/" class="pf-link" target="_blank">
+                          <dl class="pf-content">
+                            <dt class="pf-img">
+                              <img src="./resources/images/bg-pf-mymymy.PNG" alt="Mymymy" />
+                            </dt>
+                            <dd class="pf-title">FireBase Data 연동</dd>
+                          </dl>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -325,14 +335,23 @@
           <!-- 연락 -->
           <div class="contact section">
             <div class="contact-wrap">
-              <form action="">
+              <form>
                 <fieldset>
                   <legend>연락</legend>
-                  <dl>
-                    <dt id="bigOne">firebase test</dt>
-                    <dd></dd>
+                  <dl class="user-form">
+                    <dt class="label">이름</dt>
+                    <dd class="inp-wrap"><input type="text" class="inp user-input" data-key='name' /></dd>
+                  
+                    <dt class="label">이메일</dt>
+                    <dd class="inp-wrap"><input type="text" class="inp user-input" data-key='email' /></dd>
+
+                    <dt class="label">내용</dt>
+                    <dd class="inp-wrap"><textarea class="inp user-input" data-key='contents'></textarea></dd>
                   </dl>
                 </fieldset>
+                <div class="btn-wrap">
+                  <button type="button" class="subbtn-submit">보내기</button>
+                </div>
               </form>
             </div>
           </div>
@@ -349,6 +368,8 @@
           </div>
           <!-- //푸터 -->
 
+          <hr class="component-division">
+
         </div>
 
       </div>
@@ -362,30 +383,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script src="./resources/js/greeting.js"></script>
     <script src="./resources/js/common.js"></script>
-   
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDnEwfMQ0QfP0Mrr7VAnC50_0UlEiDfQBc",
-        authDomain: "mymymy-1f526.firebaseapp.com",
-        databaseURL: "https://mymymy-1f526.firebaseio.com",
-        projectId: "mymymy-1f526",
-        storageBucket: "mymymy-1f526.appspot.com",
-        messagingSenderId: "934732989373",
-        appId: "1:934732989373:web:9937bba1c26875090c88d4",
-        measurementId: "G-VGCHZSW945"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      //console.log(firebase);
-      //var database = firebase.database();
-      //console.log(database);    
-      var bigOne = document.getElementById('bigOne');
-      var dbRef = firebase.database().ref().child('text');
-      dbRef.on('value', snap => bigOne.innerText = snap.val());
-      console.log(dbRef);
-    </script>
- 
+    <script src="./resources/js/firebase.js"></script>
 
   </body>
 

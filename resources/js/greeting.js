@@ -20,9 +20,6 @@ function handleSubmit(event) {
 function askForName() {
   form.classList.add(SHOWING_CN);
   form.addEventListener("submit", handleSubmit);
-  console.log('sdfkjsdf')
-  
-
 }
 
 function paintGreeting(text) {

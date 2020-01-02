@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Alex Meraz",
+      "contents": "안녕, 잘지내니?",
+      "email": "ameraz@email.com"
+    },
+    {
+      "name": "Mohammed Rafi",
+      "contents": "어때 잘지냈어?",
+      "email": "mrafi@email.com"
+    },
+    {
+      "name": "Raja Tamil",
+      "contents": "상담드립니다",
+      "email": "rtamil@email.com"
+    },
+    {
+      "name": "Sundar Pichai",
+      "contents": "테스트입니다",
+      "email": "spichai@email.com"
+    }
+  ]
+}
