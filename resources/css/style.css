@@ -280,7 +280,7 @@ ul {
 }
 
 .intro-wrap .lead {
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .intro-wrap .lead em {
@@ -354,6 +354,7 @@ ul {
 .skill-wrap {
   font-size: 0;
   line-height: 0;
+  text-align: center;
 }
 
 .skill-wrap .skill-bar {
@@ -373,11 +374,11 @@ ul {
   line-height: 1;
   font-size: 15px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .skill-wrap .skill-bar .skill-level {
   display: inline-block;
-  width: 70%;
   vertical-align: top;
 }
 
