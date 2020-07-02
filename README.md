@@ -1,3 +1,11 @@
-# mymymy
+# Mymymy
 
-내 소개
+- url:
+https://poburi.github.io/mymymy/
+
+- spec:
+HTML5, SCSS, JS, Firebase(DB)
+
+
+
+
