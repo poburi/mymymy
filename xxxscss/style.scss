@@ -82,7 +82,8 @@
 }
 
 .introduce-box {
-  display: none;
+  // display: none;
+  background: rgba(0,0,0,0.5);
 
   &.active {
     display: block;
