@@ -235,8 +235,8 @@ $errorColor: #ec5026;
 
       .speech {
         position: absolute;
-        top: 18px;
-        right: -130px;
+        top: 0;
+        right: -100px;
         background: $emColor;
         padding: 3px 10px 5px 10px;
         border-radius: 10px;
@@ -250,6 +250,7 @@ $errorColor: #ec5026;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
+          line-height: 1.5;
         }
 
         &:after {
@@ -585,7 +586,7 @@ $errorColor: #ec5026;
     display: block;
     
     .pic {
-      margin: 0 auto 30px auto;
+      margin: 0 auto 5px auto;
     }
     
     .speech {

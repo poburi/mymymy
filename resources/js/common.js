@@ -23,10 +23,15 @@ if (window.screen.width) {
     e.preventDefault();
     var target = $(this).data("tab");
 
-    $(this)
+    /* 텝 메뉴 이미 활성화 되어있는 경우 조건 */
+    if($(this).hasClass("showing")){
+     return false;
+    } else {
+      $(this)
       .toggleClass("showing")
       .siblings()
       .removeClass("showing");
+    }
 
     $(this)
       .closest(".js-tab-wrap")

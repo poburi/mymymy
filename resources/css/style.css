@@ -238,8 +238,8 @@ ul {
     margin-right: 20px; }
     .intro-wrap .pic .speech {
       position: absolute;
-      top: 18px;
-      right: -130px;
+      top: 0;
+      right: -100px;
       background: #ffcd00;
       padding: 3px 10px 5px 10px;
       border-radius: 10px;
@@ -251,7 +251,8 @@ ul {
         max-width: 165px;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden; }
+        overflow: hidden;
+        line-height: 1.5; }
       .intro-wrap .pic .speech:after {
         content: '';
         position: absolute;
@@ -469,7 +470,7 @@ ul {
   .intro-wrap {
     display: block; }
     .intro-wrap .pic {
-      margin: 0 auto 30px auto; }
+      margin: 0 auto 5px auto; }
     .intro-wrap .speech {
       position: relative !important;
       right: 0 !important;
